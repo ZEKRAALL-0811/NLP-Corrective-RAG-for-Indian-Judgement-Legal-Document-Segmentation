@@ -1,0 +1,106 @@
+[
+  {
+    "num": 1,
+    "title": "K. Bharathi's arguments",
+    "question": "What were K. Bharathi\u2019s principal arguments concerning the alleged wilful disobedience of court orders and the disputed mortgage transactions?",
+    "duration_sec": 51.23,
+    "mapped_roles": [
+      "Arguments of Respondent"
+    ],
+    "role_kind": "role",
+    "role_confidence": 0.98,
+    "final_status": "ready",
+    "answer": "K. Bharathi, Respondent-5, contended that the impugned order incorrectly assumed awareness of execution proceedings and Attachment orders without evidence, and that the mortgage deed dated 19.06.2009 was declared illegal and void without examining the original document  [1].",
+    "citations": [
+      1
+    ],
+    "gate_status": "gate_disabled",
+    "gate_verified": true,
+    "sources": [
+      {
+        "id": "sample3_role_66",
+        "role": "Arguments of Respondent",
+        "first_para_marker": null,
+        "text": "The impugned order has gone on the premise that the respondent-5 was aware of the execution proceedings and the order of Attachment and Prohibitory order, while there has not been a document to evidence the same. The learned Judge has come to this co"
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Legal effect of prohibitory order",
+    "question": "What was the legal effect of the prohibitory order dated 21 April 2005, and how did the parties disagree over whether it was violated?",
+    "duration_sec": 39.72,
+    "mapped_roles": [
+      "Reasoning"
+    ],
+    "role_kind": "role",
+    "role_confidence": 0.98,
+    "final_status": "ready",
+    "answer": "The prohibitory order dated 21 April 2005 prohibited and restrained respondents 1 to 3 from alienating the property specified in Schedules A & B by sale, gift or otherwise, as well as restraining other persons from receiving the same by purchase, gift or otherwise. The legal effect of this order was that it prevented the respondents from creating a subsequent mortgage on the property. The parties disagreed over whether the attachment order and prohibitory order bound the judgment debtors to the consent decree and whether they were fully aware about the creation of the charge  [1].",
+    "citations": [
+      1
+    ],
+    "gate_status": "gate_disabled",
+    "gate_verified": true,
+    "sources": [
+      {
+        "id": "sample3_role_100",
+        "role": "Reasoning",
+        "first_para_marker": null,
+        "text": "Thereafter, in the execution proceedings initiated by the appellant, an order of attachment of the immovable properties shown in Schedules A & B therein was passed on 19.04.2005, followed by the passing of the prohibitory order on 21.04.2005 not only"
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Fraud and collusion trial contention",
+    "question": "Why did the respondents contend that allegations of fraud and collusion required a proper trial?",
+    "duration_sec": 27.26,
+    "mapped_roles": [
+      "Arguments of Respondent"
+    ],
+    "role_kind": "role",
+    "role_confidence": 0.98,
+    "final_status": "ready",
+    "answer": "The respondents contended that allegations of fraud and collusion required a proper trial because the learned Judge arrived at findings of fraud and collusion based on prima facie evidence, which cannot be sufficient to convict without an exhaustive trial.[1]",
+    "citations": [
+      1
+    ],
+    "gate_status": "gate_disabled",
+    "gate_verified": true,
+    "sources": [
+      {
+        "id": "sample3_role_71",
+        "role": "Arguments of Respondent",
+        "first_para_marker": null,
+        "text": "As per paragraph 27 of the impugned order, the learned Judge has arrived at this finding on the basis of a prima facie fraud and collusion against the appellant. It is a settled principle in law that the findings of fraud and collusion cannot be arri"
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Article 215 powers vs Contempt of Courts Act",
+    "question": "How did the respondents distinguish the High Court\u2019s powers under Article 215 of the Constitution from the procedures under the Contempt of Courts Act?",
+    "duration_sec": 34.28,
+    "mapped_roles": [
+      "Arguments of Respondent"
+    ],
+    "role_kind": "role",
+    "role_confidence": 0.98,
+    "final_status": "ready",
+    "answer": "The respondents distinguished the High Court's powers under Article 215 of the Constitution from the procedures under the Contempt of Courts Act by arguing that the power vested under Article 215 is exercisable only in consonance with the procedure set out under the Contempt of Courts Act. They contended that the application was not filed as per the form and manner prescribed under the Contempt of Courts Act and Rules framed thereunder.[1]",
+    "citations": [
+      1
+    ],
+    "gate_status": "gate_disabled",
+    "gate_verified": true,
+    "sources": [
+      {
+        "id": "sample3_role_78",
+        "role": "Arguments of Respondent",
+        "first_para_marker": null,
+        "text": "Mr.V.Prakash, learned Senior Counsel appearing for the respondents 7, 8 & 4, by way of filing detailed written submissions inter alia (i) that the power vested under Article 215 of the Constitution of India is exercisable only in consonance with the "
+      }
+    ]
+  }
+]

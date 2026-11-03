@@ -1,0 +1,535 @@
+{
+  "test_benchmark": {
+    "total_questions": 35,
+    "variants": {
+      "rules_only": {
+        "top1_acc": 0.6,
+        "top2_acc": 0.6,
+        "top1_hits": 21,
+        "top2_hits": 21,
+        "elapsed_sec": 0.0
+      },
+      "llm_only": {
+        "top1_acc": 0.7714285714285715,
+        "top2_acc": 0.7714285714285715,
+        "top1_hits": 27,
+        "top2_hits": 27,
+        "elapsed_sec": 286.32
+      },
+      "hybrid": {
+        "top1_acc": 0.8857142857142857,
+        "top2_acc": 0.8857142857142857,
+        "top1_hits": 31,
+        "top2_hits": 31,
+        "elapsed_sec": 101.85
+      }
+    },
+    "hybrid_per_role_stats": {
+      "Facts": {
+        "total": 4,
+        "correct_top1": 4,
+        "correct_top2": 4
+      },
+      "Issue": {
+        "total": 4,
+        "correct_top1": 3,
+        "correct_top2": 3
+      },
+      "Arguments of Petitioner": {
+        "total": 4,
+        "correct_top1": 4,
+        "correct_top2": 4
+      },
+      "Arguments of Respondent": {
+        "total": 4,
+        "correct_top1": 3,
+        "correct_top2": 3
+      },
+      "Reasoning": {
+        "total": 4,
+        "correct_top1": 4,
+        "correct_top2": 4
+      },
+      "Decision": {
+        "total": 4,
+        "correct_top1": 4,
+        "correct_top2": 4
+      },
+      "None": {
+        "total": 4,
+        "correct_top1": 2,
+        "correct_top2": 2
+      },
+      "whole_document": {
+        "total": 3,
+        "correct_top1": 3,
+        "correct_top2": 3
+      },
+      "out_of_scope": {
+        "total": 4,
+        "correct_top1": 4,
+        "correct_top2": 4
+      }
+    },
+    "confusion_matrix": {
+      "Facts": {
+        "Facts": 4
+      },
+      "Issue": {
+        "Issue": 3,
+        "Reasoning": 1
+      },
+      "Arguments of Petitioner": {
+        "Arguments of Petitioner": 4
+      },
+      "Arguments of Respondent": {
+        "Issue": 1,
+        "Arguments of Respondent": 3
+      },
+      "Reasoning": {
+        "Reasoning": 4
+      },
+      "Decision": {
+        "Decision": 4
+      },
+      "None": {
+        "Arguments of Petitioner": 1,
+        "Decision": 1,
+        "None": 2
+      },
+      "whole_document": {
+        "whole_document": 3
+      },
+      "out_of_scope": {
+        "out_of_scope": 4
+      }
+    },
+    "out_of_scope": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "gold_questions_evaluation": {
+    "total_questions": 32,
+    "top1_acc": 0.9375,
+    "top2_acc": 0.9375,
+    "top1_hits": 30,
+    "top2_hits": 30,
+    "predictions": [
+      {
+        "sample": "sample2",
+        "question": "When did the petitioners sell their shares through the Offer For Sale, and how many shares and for what amount in each case?",
+        "gold": "Facts",
+        "pred": "Facts",
+        "roles": [
+          "Facts"
+        ],
+        "kind": "role",
+        "confidence": 0.95,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample2",
+        "question": "What orders and actions were being challenged in these two writ petitions?",
+        "gold": "Facts",
+        "pred": "Arguments of Petitioner",
+        "roles": [
+          "Arguments of Petitioner"
+        ],
+        "kind": "role",
+        "confidence": 0.95,
+        "top1_correct": false,
+        "top2_correct": false
+      },
+      {
+        "sample": "sample2",
+        "question": "What was the petitioners' argument about the second proviso to Section 139(8A) and the search carried out on 12.12.2024?",
+        "gold": "Arguments of Petitioner",
+        "pred": "Arguments of Petitioner",
+        "roles": [
+          "Arguments of Petitioner"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample2",
+        "question": "Why did the petitioners say no prudent person could have had reason to believe anything under Section 132(1)(b)?",
+        "gold": "Arguments of Petitioner",
+        "pred": "Arguments of Petitioner",
+        "roles": [
+          "Arguments of Petitioner"
+        ],
+        "kind": "role",
+        "confidence": 0.95,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample2",
+        "question": "What did the Revenue argue about how far the court can review a search authorization?",
+        "gold": "Arguments of Respondent",
+        "pred": "Arguments of Respondent",
+        "roles": [
+          "Arguments of Respondent"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample2",
+        "question": "How did the Revenue's counsel answer the petitioners' reliance on the Dr. Anita Sahay judgment?",
+        "gold": "Arguments of Respondent",
+        "pred": "Arguments of Respondent",
+        "roles": [
+          "Arguments of Respondent"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample2",
+        "question": "What concession did the Additional Solicitor General make about clauses (a) and (c) of Section 132(1)?",
+        "gold": "Arguments of Respondent",
+        "pred": "Arguments of Respondent",
+        "roles": [
+          "Arguments of Respondent"
+        ],
+        "kind": "role",
+        "confidence": 0.95,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample2",
+        "question": "Why did the court refuse to let the supplementary documents filed by the Revenue justify the search?",
+        "gold": "Reasoning",
+        "pred": "Reasoning",
+        "roles": [
+          "Reasoning"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample2",
+        "question": "On what reasoning did the court hold the Section 131(1A) notice could not stand?",
+        "gold": "Reasoning",
+        "pred": "Reasoning",
+        "roles": [
+          "Reasoning"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample2",
+        "question": "What second issue did the court take up in Sneh Lata Agrawal's petition after deciding the search challenge?",
+        "gold": "Issue",
+        "pred": "Issue",
+        "roles": [
+          "Issue"
+        ],
+        "kind": "role",
+        "confidence": 0.95,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample2",
+        "question": "What relief did the High Court finally grant, and what did it leave open to the Revenue?",
+        "gold": "Decision",
+        "pred": "Decision",
+        "roles": [
+          "Decision"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample2",
+        "question": "Which judges decided this writ tax case, and when was the judgment delivered?",
+        "gold": "None",
+        "pred": "None",
+        "roles": [
+          "None"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample3",
+        "question": "What did the consent compromise decree of 13.09.1993 provide, and what did the decree holder do when it was not complied with?",
+        "gold": "Facts",
+        "pred": "Facts",
+        "roles": [
+          "Facts"
+        ],
+        "kind": "role",
+        "confidence": 0.95,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample3",
+        "question": "Why did the appellant file Application Nos. 6897, 6898, 8122 and 8126 of 2018?",
+        "gold": "Facts",
+        "pred": "Arguments of Petitioner",
+        "roles": [
+          "Arguments of Petitioner"
+        ],
+        "kind": "role",
+        "confidence": 0.95,
+        "top1_correct": false,
+        "top2_correct": false
+      },
+      {
+        "sample": "sample3",
+        "question": "What was the first point the Bench framed for consideration?",
+        "gold": "Issue",
+        "pred": "Issue",
+        "roles": [
+          "Issue"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample3",
+        "question": "On what grounds did the decree holder argue that the NCLT order of 22.06.2018 should not bind it?",
+        "gold": "Arguments of Petitioner",
+        "pred": "Arguments of Petitioner",
+        "roles": [
+          "Arguments of Petitioner"
+        ],
+        "kind": "role",
+        "confidence": 0.95,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample3",
+        "question": "How did the decree holder's counsel answer the argument that creating a mortgage is not an alienation barred by the prohibitory order?",
+        "gold": "Arguments of Petitioner",
+        "pred": "Arguments of Petitioner",
+        "roles": [
+          "Arguments of Petitioner"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample3",
+        "question": "Why did the Resolution Professionals of respondents 2 and 3 say the NCLT was the proper forum?",
+        "gold": "Arguments of Respondent",
+        "pred": "Arguments of Respondent",
+        "roles": [
+          "Arguments of Respondent"
+        ],
+        "kind": "role",
+        "confidence": 0.95,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample3",
+        "question": "What was respondent-5's argument about the Advocate General's consent and Article 215?",
+        "gold": "Arguments of Respondent",
+        "pred": "Arguments of Respondent",
+        "roles": [
+          "Arguments of Respondent"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample3",
+        "question": "What did respondent-5's counsel argue about subrogation of the 2009 mortgage?",
+        "gold": "Arguments of Respondent",
+        "pred": "Arguments of Respondent",
+        "roles": [
+          "Arguments of Respondent"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample3",
+        "question": "Why did the Bench hold that the application could be treated as one for civil contempt?",
+        "gold": "Reasoning",
+        "pred": "Reasoning",
+        "roles": [
+          "Reasoning"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample3",
+        "question": "Why did the Bench refuse to interfere with deferring the auction sale until the NCLT decides?",
+        "gold": "Reasoning",
+        "pred": "Reasoning",
+        "roles": [
+          "Reasoning"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample3",
+        "question": "What was the final outcome of the original side appeals?",
+        "gold": "Decision",
+        "pred": "Decision",
+        "roles": [
+          "Decision"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "sample3",
+        "question": "Which judges decided this case, and on what date was the decision given?",
+        "gold": "None",
+        "pred": "None",
+        "roles": [
+          "None"
+        ],
+        "kind": "role",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "general",
+        "question": "What is the weather like in Chennai today?",
+        "gold": "out_of_scope",
+        "pred": "out_of_scope",
+        "roles": [],
+        "kind": "out_of_scope",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "general",
+        "question": "Can you recommend a good biryani place near me?",
+        "gold": "out_of_scope",
+        "pred": "out_of_scope",
+        "roles": [],
+        "kind": "out_of_scope",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "general",
+        "question": "Write a Python function to reverse a linked list.",
+        "gold": "out_of_scope",
+        "pred": "out_of_scope",
+        "roles": [],
+        "kind": "out_of_scope",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "general",
+        "question": "Who won the last cricket world cup?",
+        "gold": "out_of_scope",
+        "pred": "out_of_scope",
+        "roles": [],
+        "kind": "out_of_scope",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "general",
+        "question": "Tell me a joke about lawyers.",
+        "gold": "out_of_scope",
+        "pred": "out_of_scope",
+        "roles": [],
+        "kind": "out_of_scope",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "general",
+        "question": "Hi, how are you?",
+        "gold": "out_of_scope",
+        "pred": "out_of_scope",
+        "roles": [],
+        "kind": "out_of_scope",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "general",
+        "question": "What is the punishment for cheating under Indian law?",
+        "gold": "out_of_scope",
+        "pred": "out_of_scope",
+        "roles": [],
+        "kind": "out_of_scope",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      },
+      {
+        "sample": "general",
+        "question": "Is it legal to record a phone call in India without consent?",
+        "gold": "out_of_scope",
+        "pred": "out_of_scope",
+        "roles": [],
+        "kind": "out_of_scope",
+        "confidence": 0.98,
+        "top1_correct": true,
+        "top2_correct": true
+      }
+    ]
+  },
+  "determinism": {
+    "num_questions": 15,
+    "num_runs": 3,
+    "identical_pct": 100.0
+  },
+  "latency_ms": {
+    "cold_ms": 29436.1,
+    "warm_avg_ms": 11353.8,
+    "rule_avg_ms": 0.216
+  }
+}

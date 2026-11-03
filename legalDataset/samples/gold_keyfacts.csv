@@ -1,0 +1,23 @@
+gold_id,sample,question,key_facts
+gold_1,sample2,"When did the petitioners sell their shares through the Offer For Sale, and how many shares and for what amount in each case?","01.07.2021;;11,11,486;;33,00,00,000;;14,05,405;;41,59,99,880"
+gold_2,sample2,What orders and actions were being challenged in these two writ petitions?,11.12.2024;;section 132;;27.01.2025;;131(1A)|131 (1A)
+gold_3,sample2,What was the petitioners' argument about the second proviso to Section 139(8A) and the search carried out on 12.12.2024?,139(8A)|139 (8A);;12.12.2024;;prohibit|barred|not eligible|unable;;retrospective|amendment
+gold_4,sample2,Why did the petitioners say no prudent person could have had reason to believe anything under Section 132(1)(b)?,132(1)(b)|132 (1)(b);;prudent;;notice|summons
+gold_5,sample2,What did the Revenue argue about how far the court can review a search authorization?,Laljibhai;;limited;;judicial review;;satisfaction note|other allegations
+gold_6,sample2,How did the Revenue's counsel answer the petitioners' reliance on the Dr. Anita Sahay judgment?,Anita Sahay;;Chauhan;;misplaced|clarified
+gold_7,sample2,What concession did the Additional Solicitor General make about clauses (a) and (c) of Section 132(1)?,(a) and (c)|(a) & (c);;clause (b)|clause(b);;not at all attracted|not attracted|no application|conceded|not applicable
+gold_8,sample2,Why did the court refuse to let the supplementary documents filed by the Revenue justify the search?,post-search|post search|after the search;;pre-exist|prior to|before the search|already exist
+gold_9,sample2,On what reasoning did the court hold the Section 131(1A) notice could not stand?,Adarsh Kumar;;131(1A)|131 (1A);;after|post-search|already
+gold_10,sample2,What second issue did the court take up in Sneh Lata Agrawal's petition after deciding the search challenge?,131(1A)|131 (1A);;27.01.2025;;notice
+gold_11,sample2,"What relief did the High Court finally grant, and what did it leave open to the Revenue?",quash;;148;;allowed
+gold_12,sample3,"What did the consent compromise decree of 13.09.1993 provide, and what did the decree holder do when it was not complied with?",13.09.1993;;refund;;money decree;;194 of 2004|execution petition
+gold_13,sample3,"Why did the appellant file Application Nos. 6897, 6898, 8122 and 8126 of 2018?",article 215;;non-est|non est|nullity|null;;auction|25.07.2018
+gold_14,sample3,What was the first point the Bench framed for consideration?,article 215;;2(b);;maintainab;;contempt of courts act
+gold_15,sample3,On what grounds did the decree holder argue that the NCLT order of 22.06.2018 should not bind it?,fraud|suppression;;nullity|non-est|non est|not bind|nothing;;nclt;;22.06.2018
+gold_16,sample3,How did the decree holder's counsel answer the argument that creating a mortgage is not an alienation barred by the prohibitory order?,58(a)|section 58;;alienation;;bundle of rights|interest in specific immovable property;;mortgage
+gold_17,sample3,Why did the Resolution Professionals of respondents 2 and 3 say the NCLT was the proper forum?,nclt;;moratorium;;bypass|forum|authorised|authorized|equipped
+gold_18,sample3,What was respondent-5's argument about the Advocate General's consent and Article 215?,advocate general;;section 15|15 of;;article 215;;criminal contempt
+gold_19,sample3,What did respondent-5's counsel argue about subrogation of the 2009 mortgage?,subrogat;;indian bank;;1989
+gold_20,sample3,Why did the Bench hold that the application could be treated as one for civil contempt?,article 215;;court of record|inherent;;civil contempt;;notice|natural justice
+gold_21,sample3,Why did the Bench refuse to interfere with deferring the auction sale until the NCLT decides?,moratorium;;section 14;;nclt;;abeyance|defer|cannot be faulted
+gold_22,sample3,What was the final outcome of the original side appeals?,dismiss;;costs;;liberty|re-apply|reapply;;nclt

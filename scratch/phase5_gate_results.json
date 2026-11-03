@@ -1,0 +1,26 @@
+{
+  "disabled_mode": {
+    "status": "gate_disabled",
+    "verified": true,
+    "score": 1.0,
+    "reason": "Online quality gate is disabled in configuration.",
+    "is_correct_disabled": true
+  },
+  "live_mode": {
+    "status": "passed",
+    "verified": true,
+    "faithfulness_score": 1.0,
+    "relevancy_score": 1.0,
+    "reason": "Faithfulness: The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!; Relevancy: The score is 1.00 because the actual output directly and accurately addresses the input without including any irrelevant statements.",
+    "ledger_count_before": 1113,
+    "ledger_count_after": 1119,
+    "ledger_increment": 6,
+    "live_call_made": true
+  },
+  "graceful_degradation": {
+    "status": "not_verified",
+    "verified": false,
+    "reason": "GEMINI_API_KEY missing; degraded to unverified.",
+    "handled_gracefully": true
+  }
+}

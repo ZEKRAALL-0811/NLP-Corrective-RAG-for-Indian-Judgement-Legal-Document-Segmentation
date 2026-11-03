@@ -1,0 +1,427 @@
+[
+  {
+    "case_id": "gold_1",
+    "sample": "sample2",
+    "question": "When did the petitioners sell their shares through the Offer For Sale, and how many shares and for what amount in each case?",
+    "context_chunks": [
+      "sample2_role_5",
+      "sample2_role_6"
+    ],
+    "variants": {
+      "a_faithful": {
+        "answer": "The petitioners sold their shares through Offer For Sale (O.F.S.) on 01.07.2021. In the case of Pramod Swarup Agrawal, they sold 11,11,486 equity shares for a total consideration of Rs.33,00,00,000/-. In the case of Sneh Lata Agarwal, they sold 14,05,405 equity shares for a total consideration of Rs.41,59,99,880/-.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 1.0
+        }
+      },
+      "b_number_changed": {
+        "answer": "The petitioners sold their shares through Offer For Sale on 15.08.2021. Pramod Swarup Agrawal sold 9,00,000 equity shares for Rs.50,00,00,000/- and Sneh Lata Agarwal sold 20,00,000 equity shares for Rs.60,00,00,000/-.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 0.0
+        }
+      },
+      "c_diff_chunk": {
+        "answer": "Notice under Section 148 of the Act, 1961 was issued to both petitioners on 31.01.2025 seeking to reopen assessment for A.Y. 2022-23.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 1.0
+        }
+      },
+      "d_conclusion_reversed": {
+        "answer": "The respondents purchased all equity shares through Offer For Sale on 01.07.2021, and the petitioners' writ petition was dismissed.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.5
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 1.0
+        }
+      },
+      "e_off_topic": {
+        "answer": "The Supreme Court dismissed the special leave petition regarding trademark infringement of pharmaceutical brands.",
+        "metric": "relevancy",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 0.0
+        }
+      }
+    }
+  },
+  {
+    "case_id": "gold_3",
+    "sample": "sample2",
+    "question": "What was the petitioners' argument about the second proviso to Section 139(8A) and the search carried out on 12.12.2024?",
+    "context_chunks": [
+      "sample2_role_3",
+      "sample2_role_9"
+    ],
+    "variants": {
+      "a_faithful": {
+        "answer": "The petitioners' argument is that they were statutorily prohibited from paying tax on the transaction due to the second proviso to Section 139(8A) of the Act, 1961, as a result of the search operation conducted on 12.12.2024.[1].",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 1.0
+        }
+      },
+      "b_number_changed": {
+        "answer": "The petitioners argued they were statutorily prohibited from paying tax due to Section 148 following the search operation on 20.04.2020.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 1.0
+        }
+      },
+      "c_diff_chunk": {
+        "answer": "At the time of transfer, the company was not a listed company and was listed on recognized stock exchange on 05.07.2021.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 1.0
+        }
+      },
+      "d_conclusion_reversed": {
+        "answer": "The respondents argued that the petitioners were statutorily obligated to pay tax despite the second proviso to Section 139(8A) and the search.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 1.0
+        }
+      },
+      "e_off_topic": {
+        "answer": "The High Court granted pre-arrest anticipatory bail under Section 438 of the Code of Criminal Procedure.",
+        "metric": "relevancy",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 0.0
+        }
+      }
+    }
+  },
+  {
+    "case_id": "gold_5",
+    "sample": "sample2",
+    "question": "What did the Revenue argue about how far the court can review a search authorization?",
+    "context_chunks": [
+      "sample2_role_58"
+    ],
+    "variants": {
+      "a_faithful": {
+        "answer": "The Revenue argued that the court's scope of review in this case is limited, relying on the judgment of Laljibhai Kanjibhai Mandalia [1]. They claimed there is no illegality in the impugned action as it is based on information and reason to believe. The Revenue also stated that the petitioners' counsel has proceeded with an incorrect premise by focusing solely on non-payment of capital gains tax for the sale of shares under the OFS.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.6666666666666666
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": null
+        }
+      },
+      "b_number_changed": {
+        "answer": "The Revenue argued that under Section 148 the Court has unlimited jurisdiction to examine the sufficiency of satisfaction notes from 15.03.2021.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 0.0
+        }
+      },
+      "c_diff_chunk": {
+        "answer": "In the case of Pramod Swarup Agrawal, 11,11,486 equity shares were transferred for total consideration of Rs.33,00,00,000/-.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 1.0
+        }
+      },
+      "d_conclusion_reversed": {
+        "answer": "The petitioners argued that the High Court possesses full jurisdiction in writ proceedings to examine the adequacy of the satisfaction note, reversing the Revenue's position.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": null
+        }
+      },
+      "e_off_topic": {
+        "answer": "The patent office rejected the application for compulsory licensing under Section 84 of the Patents Act.",
+        "metric": "relevancy",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 0.0
+        }
+      }
+    }
+  },
+  {
+    "case_id": "gold_12",
+    "sample": "sample3",
+    "question": "What did the consent compromise decree of 13.09.1993 provide, and what did the decree holder do when it was not complied with?",
+    "context_chunks": [
+      "sample3_role_87",
+      "sample3_role_88"
+    ],
+    "variants": {
+      "a_faithful": {
+        "answer": "The consent compromise decree of 13.09.1993 provided for an extension of time for completion of construction at enhanced rates, with the sums paid by the appellant to be refunded with interest upon full settlement. If default occurred, the decree would be executed as a money decree. When the decree holder (appellant) was not complied with, proceedings were initiated, including issuance of attachment orders and prohibitory orders, followed by auction sales of the property that were allegedly scuttled by the judgment debtors.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.8
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": null
+        }
+      },
+      "b_number_changed": {
+        "answer": "The consent compromise decree of 13.09.1993 provided that time for deposit was extended up to 31.12.2005, with default interest at 24% per annum.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": null
+        }
+      },
+      "c_diff_chunk": {
+        "answer": "The appellant filed Application Nos. 6897, 6898, 8122 and 8123 of 2018 seeking to set aside the auction sale.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": null
+        }
+      },
+      "d_conclusion_reversed": {
+        "answer": "The consent compromise decree of 13.09.1993 dismissed all extensions of time and held the decree fully satisfied and unexecutable by the judgment debtor.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": null
+        }
+      },
+      "e_off_topic": {
+        "answer": "The company law tribunal approved the resolution plan submitted by the committee of creditors.",
+        "metric": "relevancy",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 0.0
+        }
+      }
+    }
+  },
+  {
+    "case_id": "gold_14",
+    "sample": "sample3",
+    "question": "What was the first point the Bench framed for consideration?",
+    "context_chunks": [
+      "sample3_role_12",
+      "sample3_role_98"
+    ],
+    "variants": {
+      "a_faithful": {
+        "answer": "The first point the Bench framed for consideration is whether the application filed by the appellant under Article 215 of the Constitution of India read with Section 2(b) of the Contempt of Courts Act is maintainable.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 1.0
+        }
+      },
+      "b_number_changed": {
+        "answer": "The first point the Bench framed for consideration was whether Section 138 of the Negotiable Instruments Act applies after 90 days.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 0.0
+        }
+      },
+      "c_diff_chunk": {
+        "answer": "The consent compromise decree dated 13.09.1993 provided that time for deposit was extended up to 31.03.1994.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 1.0
+        }
+      },
+      "d_conclusion_reversed": {
+        "answer": "The Bench framed the first point as whether the appeal was barred by res judicata and dismissed the petitioner's standing entirely, rather than considering maintainability.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.5
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 0.5
+        }
+      },
+      "e_off_topic": {
+        "answer": "The consumer forum directed the insurance company to pay the accidental death benefit claim.",
+        "metric": "relevancy",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 0.0
+        }
+      }
+    }
+  },
+  {
+    "case_id": "gold_16",
+    "sample": "sample3",
+    "question": "How did the decree holder's counsel answer the argument that creating a mortgage is not an alienation barred by the prohibitory order?",
+    "context_chunks": [
+      "sample3_role_77",
+      "sample3_role_96"
+    ],
+    "variants": {
+      "a_faithful": {
+        "answer": "The decree holder's counsel argued that creating a mortgage is not an alienation barred by the prohibitory order, citing Section 63 of the Insolvency & Bankruptcy Code and Section 92 of the Transfer of Property Act, 1882. [1] According to the counsel, the creation of a mortgage does not constitute an alienation within the meaning of the prohibitory order dated 21.04.2005. [2]",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.5
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": null
+        }
+      },
+      "b_number_changed": {
+        "answer": "The decree holder's counsel argued that creating a mortgage violated Clause 14 of the contract and required payment of Rs. 10,00,00,000 within 30 days.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": null
+        }
+      },
+      "c_diff_chunk": {
+        "answer": "Point No. 1 was whether the application filed under Section 47 of the Code of Civil Procedure by the appellant is maintainable.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 1.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": null
+        }
+      },
+      "d_conclusion_reversed": {
+        "answer": "The decree holder conceded that creating the mortgage was a clear and wilful alienation violating the injunction, granting relief to the respondent.",
+        "metric": "faithfulness",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": null
+        }
+      },
+      "e_off_topic": {
+        "answer": "The central administrative tribunal quashed the disciplinary penalty imposed on the railway employee.",
+        "metric": "relevancy",
+        "primary": {
+          "model": "gemini-3.5-flash-lite",
+          "score": 0.0
+        },
+        "secondary": {
+          "model": "gemma-4-26b-a4b-it",
+          "score": 0.0
+        }
+      }
+    }
+  }
+]

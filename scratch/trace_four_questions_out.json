@@ -1,0 +1,338 @@
+{
+  "q1": {
+    "question": "What were K. Bharathi\u2019s principal arguments concerning the alleged wilful disobedience of court orders and the disputed mortgage transactions?",
+    "mapped_roles": [
+      "Arguments of Petitioner"
+    ],
+    "role_confidence": 0.95,
+    "role_kind": "role",
+    "retry_count": 0,
+    "relax_level": 0,
+    "final_status": "ready",
+    "retrieved_chunk_ids": [
+      "sample3_role_58",
+      "sample3_role_104",
+      "sample3_role_113",
+      "sample3_role_112",
+      "sample3_role_59",
+      "sample3_role_24",
+      "sample3_role_71",
+      "sample3_role_109",
+      "sample3_role_52",
+      "sample3_role_114",
+      "sample3_role_115",
+      "sample3_role_29",
+      "sample3_role_44",
+      "sample3_role_95",
+      "sample3_role_77",
+      "sample3_role_28",
+      "sample3_role_61",
+      "sample3_role_82"
+    ],
+    "retrieved_chunk_roles": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "graded_chunks": [
+      {
+        "id": "sample3_role_58",
+        "role": "Arguments of Respondent",
+        "grade": "correct",
+        "score": 0.9,
+        "reason": null,
+        "snippet": "10. Mr.N.P.Vijay Kumar, the learned counsel appearing for the Resolution Professionals of the respondents 2 & 3 reiterated the submissions m"
+      },
+      {
+        "id": "sample3_role_104",
+        "role": "Facts",
+        "grade": "ambiguous",
+        "score": 0.5,
+        "reason": null,
+        "snippet": "The action of the Judgment Debtors, their promoter, directors and Respondent 5 should be examined against this factual background. On perusa"
+      },
+      {
+        "id": "sample3_role_113",
+        "role": "Facts",
+        "grade": "incorrect",
+        "score": 0.1,
+        "reason": null,
+        "snippet": "Hence, the said transfer by way of the alleged mortgage is void. In light of the above discussion and analysis, I conclude that the mortgage"
+      }
+    ],
+    "generation": "K. Bharathi\u2019s principal arguments concerning the alleged wilful disobedience of court orders and the disputed mortgage transactions were that the execution proceedings before the court were not referred to in the arbitration or proceeding before the NCLT, and that the machinery created by the IBC cannot be bypassed  [1].",
+    "sources": [
+      {
+        "citation_index": 1,
+        "chunk_id": "sample3_role_58",
+        "role": "Arguments of Respondent",
+        "para_marker": "10.",
+        "snippet": "10. Mr.N.P.Vijay Kumar, the learned counsel appearing for the Resolution Professionals of the respondents 2 & 3 reiterated the submissions m"
+      }
+    ]
+  },
+  "q2": {
+    "question": "What was the legal effect of the prohibitory order dated 21 April 2005, and how did the parties disagree over whether it was violated?",
+    "mapped_roles": [
+      "Reasoning"
+    ],
+    "role_confidence": 0.98,
+    "role_kind": "role",
+    "retry_count": 0,
+    "relax_level": 0,
+    "final_status": "ready",
+    "retrieved_chunk_ids": [
+      "sample3_role_70",
+      "sample3_role_96",
+      "sample3_role_102",
+      "sample3_role_88",
+      "sample3_role_15",
+      "sample3_role_71",
+      "sample3_role_115",
+      "sample3_role_113",
+      "sample3_role_67",
+      "sample3_role_44",
+      "sample3_role_101",
+      "sample3_role_52",
+      "sample3_role_77",
+      "sample3_role_64",
+      "sample3_role_61"
+    ],
+    "retrieved_chunk_roles": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "graded_chunks": [
+      {
+        "id": "sample3_role_102",
+        "role": "Reasoning",
+        "grade": "correct",
+        "score": 0.9,
+        "reason": null,
+        "snippet": "Thereafter, in the execution proceedings initiated by the appellant, an order of attachment of the immovable properties shown in Schedules A"
+      },
+      {
+        "id": "sample3_role_70",
+        "role": "Arguments of Petitioner",
+        "grade": "ambiguous",
+        "score": 0.5,
+        "reason": null,
+        "snippet": "The learned Judge has failed to appreciate the interpretation of the Prohibitory order dated 21.04.2005, wherein the order prohibited the ju"
+      },
+      {
+        "id": "sample3_role_96",
+        "role": "Arguments of Petitioner",
+        "grade": "incorrect",
+        "score": 0.1,
+        "reason": null,
+        "snippet": "Moreover, Section 63 of the Insolvency & Bankruptcy Code bars the jurisdiction of the civil Court to entertain any suit or proceedings in re"
+      }
+    ],
+    "generation": "The prohibitory order dated 21 April 2005 prohibited and restrained the respondents from alienating the property by sale, gift or otherwise, and also restrained other persons from receiving it by purchase, gift or otherwise  [1].",
+    "sources": [
+      {
+        "citation_index": 1,
+        "chunk_id": "sample3_role_102",
+        "role": "Reasoning",
+        "para_marker": "23.",
+        "snippet": "Thereafter, in the execution proceedings initiated by the appellant, an order of attachment of the immovable properties shown in Schedules A"
+      }
+    ]
+  },
+  "q3": {
+    "question": "Why did the respondents contend that allegations of fraud and collusion required a proper trial?",
+    "mapped_roles": [
+      "Arguments of Respondent"
+    ],
+    "role_confidence": 0.98,
+    "role_kind": "role",
+    "retry_count": 0,
+    "relax_level": 0,
+    "final_status": "ready",
+    "retrieved_chunk_ids": [
+      "sample3_role_73",
+      "sample3_role_52",
+      "sample3_role_34",
+      "sample3_role_51",
+      "sample3_role_33",
+      "sample3_role_20",
+      "sample3_role_49",
+      "sample3_role_39",
+      "sample3_role_40",
+      "sample3_role_36",
+      "sample3_role_30",
+      "sample3_role_82",
+      "sample3_role_22",
+      "sample3_role_93",
+      "sample3_role_99",
+      "sample3_role_101",
+      "sample3_role_59",
+      "sample3_role_118"
+    ],
+    "retrieved_chunk_roles": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "graded_chunks": [
+      {
+        "id": "sample3_role_73",
+        "role": "Reasoning",
+        "grade": "correct",
+        "score": 0.9,
+        "reason": null,
+        "snippet": "As per paragraph 27 of the impugned order, the learned Judge has arrived at this finding on the basis of a prima facie fraud and collusion a"
+      },
+      {
+        "id": "sample3_role_52",
+        "role": "Reasoning",
+        "grade": "ambiguous",
+        "score": 0.5,
+        "reason": null,
+        "snippet": "The perpetrators of such fraudulent and illegal acts cannot seek any equity from this Court. It would be evident that during the proceedings"
+      },
+      {
+        "id": "sample3_role_34",
+        "role": "Arguments of Petitioner",
+        "grade": "incorrect",
+        "score": 0.1,
+        "reason": null,
+        "snippet": "I. Despite a prima facie finding that fraud has been committed by respondents 2, 3, 4, 5, 7 & 8, and coupled with the stand of respondents 2"
+      }
+    ],
+    "generation": "The respondents contend that allegations of fraud and collusion require a proper trial because, as per paragraph 27 of the impugned order [1], findings of fraud and collusion cannot be arrived at in their absence. This is a settled principle in law. The learned Judge has convicted respondent-5 for contempt on mere doubts of fraud, rather than an exhaustive trial.",
+    "sources": [
+      {
+        "citation_index": 1,
+        "chunk_id": "sample3_role_73",
+        "role": "Reasoning",
+        "para_marker": "para 27",
+        "snippet": "As per paragraph 27 of the impugned order, the learned Judge has arrived at this finding on the basis of a prima facie fraud and collusion a"
+      }
+    ]
+  },
+  "q4": {
+    "question": "How did the respondents distinguish the High Court\u2019s powers under Article 215 of the Constitution from the procedures under the Contempt of Courts Act?",
+    "mapped_roles": [
+      "Reasoning"
+    ],
+    "role_confidence": 0.95,
+    "role_kind": "role",
+    "retry_count": 0,
+    "relax_level": 0,
+    "final_status": "ready",
+    "retrieved_chunk_ids": [
+      "sample3_role_42",
+      "sample3_role_81",
+      "sample3_role_41",
+      "sample3_role_100",
+      "sample3_role_52",
+      "sample3_role_61",
+      "sample3_role_98",
+      "sample3_role_40",
+      "sample3_role_44",
+      "sample3_role_77",
+      "sample3_role_117",
+      "sample3_role_101",
+      "sample3_role_64",
+      "sample3_role_53",
+      "sample3_role_71"
+    ],
+    "retrieved_chunk_roles": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "graded_chunks": [
+      {
+        "id": "sample3_role_100",
+        "role": "Reasoning",
+        "grade": "correct",
+        "score": 0.9,
+        "reason": null,
+        "snippet": "However, the learned Senior Counsel for the appellant/decree holder submitted that when the application has been filed under Article 215 of "
+      },
+      {
+        "id": "sample3_role_52",
+        "role": "Reasoning",
+        "grade": "ambiguous",
+        "score": 0.5,
+        "reason": null,
+        "snippet": "The perpetrators of such fraudulent and illegal acts cannot seek any equity from this Court. It would be evident that during the proceedings"
+      },
+      {
+        "id": "sample3_role_42",
+        "role": "None",
+        "grade": "incorrect",
+        "score": 0.1,
+        "reason": null,
+        "snippet": "There is inherent power in the High Court (being a Court of record) and Supreme Court to punish for contempt [SBCA v. UOI-1998 4 SCC 409]. T"
+      }
+    ],
+    "generation": "The respondents distinguished the High Court's powers under Article 215 of the Constitution from the procedures under the Contempt of Courts Act by citing settled legal precedents, which hold that the inherent power conferred upon the High Court under Article 215 cannot be curtailed by the Contempt of Courts Act  [1].",
+    "sources": [
+      {
+        "citation_index": 1,
+        "chunk_id": "sample3_role_100",
+        "role": "Reasoning",
+        "para_marker": "21.",
+        "snippet": "However, the learned Senior Counsel for the appellant/decree holder submitted that when the application has been filed under Article 215 of "
+      }
+    ]
+  }
+}

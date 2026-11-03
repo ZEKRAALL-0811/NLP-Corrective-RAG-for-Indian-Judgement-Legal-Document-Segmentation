@@ -1,0 +1,250 @@
+{
+  "gold_1": {
+    "a_faithful": {
+      "primary_strict_score": 1.0,
+      "primary_verdicts": [
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "sec_strict_score": 1.0,
+      "sec_verdicts": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    "b_number_changed": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "no",
+        "no",
+        "no"
+      ],
+      "sec_strict_score": 0.0,
+      "sec_verdicts": [
+        "no",
+        "no",
+        "no"
+      ]
+    },
+    "c_diff_chunk": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "idk"
+      ],
+      "sec_strict_score": 0.0,
+      "sec_verdicts": [
+        "idk"
+      ]
+    },
+    "d_conclusion_reversed": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "no",
+        "idk"
+      ],
+      "sec_strict_score": 0.0,
+      "sec_verdicts": [
+        "idk",
+        "idk"
+      ]
+    }
+  },
+  "gold_3": {
+    "a_faithful": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "no"
+      ],
+      "sec_strict_score": 0.0,
+      "sec_verdicts": [
+        "idk"
+      ]
+    },
+    "b_number_changed": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "no"
+      ],
+      "sec_strict_score": 0.0,
+      "sec_verdicts": [
+        "idk"
+      ]
+    },
+    "c_diff_chunk": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "idk",
+        "idk"
+      ],
+      "sec_strict_score": 0.0,
+      "sec_verdicts": [
+        "idk",
+        "idk"
+      ]
+    },
+    "d_conclusion_reversed": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "idk"
+      ],
+      "sec_strict_score": 0.0,
+      "sec_verdicts": [
+        "idk"
+      ]
+    }
+  },
+  "gold_5": {
+    "a_faithful": {
+      "primary_strict_score": 0.6666666666666666,
+      "primary_verdicts": [
+        "yes",
+        "no",
+        "yes"
+      ],
+      "sec_strict_score": null
+    },
+    "b_number_changed": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "no"
+      ],
+      "sec_strict_score": 0.0,
+      "sec_verdicts": [
+        "no"
+      ]
+    },
+    "c_diff_chunk": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "idk"
+      ],
+      "sec_strict_score": 0.0,
+      "sec_verdicts": [
+        "idk"
+      ]
+    },
+    "d_conclusion_reversed": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "idk"
+      ],
+      "sec_strict_score": null
+    }
+  },
+  "gold_12": {
+    "a_faithful": {
+      "primary_strict_score": 0.8571428571428571,
+      "primary_verdicts": [
+        "yes",
+        "yes",
+        "no",
+        "yes",
+        "yes",
+        "yes",
+        "yes"
+      ],
+      "sec_strict_score": null
+    },
+    "b_number_changed": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "no"
+      ],
+      "sec_strict_score": null
+    },
+    "c_diff_chunk": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "idk"
+      ],
+      "sec_strict_score": null
+    },
+    "d_conclusion_reversed": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "no",
+        "no"
+      ],
+      "sec_strict_score": null
+    }
+  },
+  "gold_14": {
+    "a_faithful": {
+      "primary_strict_score": 1.0,
+      "primary_verdicts": [
+        "yes"
+      ],
+      "sec_strict_score": 1.0,
+      "sec_verdicts": [
+        "yes"
+      ]
+    },
+    "b_number_changed": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "no"
+      ],
+      "sec_strict_score": 0.0,
+      "sec_verdicts": [
+        "no"
+      ]
+    },
+    "c_diff_chunk": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "idk",
+        "idk"
+      ],
+      "sec_strict_score": 0.0,
+      "sec_verdicts": [
+        "idk"
+      ]
+    },
+    "d_conclusion_reversed": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "no",
+        "idk"
+      ],
+      "sec_strict_score": 0.0,
+      "sec_verdicts": [
+        "no",
+        "idk"
+      ]
+    }
+  },
+  "gold_16": {
+    "a_faithful": {
+      "primary_strict_score": 0.5,
+      "primary_verdicts": [
+        "no",
+        "yes"
+      ],
+      "sec_strict_score": null
+    },
+    "b_number_changed": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "idk",
+        "idk"
+      ],
+      "sec_strict_score": null
+    },
+    "c_diff_chunk": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "idk"
+      ],
+      "sec_strict_score": null
+    },
+    "d_conclusion_reversed": {
+      "primary_strict_score": 0.0,
+      "primary_verdicts": [
+        "no"
+      ],
+      "sec_strict_score": null
+    }
+  }
+}

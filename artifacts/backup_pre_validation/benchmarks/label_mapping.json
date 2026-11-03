@@ -1,0 +1,29 @@
+{
+  "canonical_labels": [
+    "Facts",
+    "Issue",
+    "Arguments of Petitioner",
+    "Arguments of Respondent",
+    "Reasoning",
+    "Decision",
+    "None"
+  ],
+  "label2id": {
+    "Facts": 0,
+    "Issue": 1,
+    "Arguments of Petitioner": 2,
+    "Arguments of Respondent": 3,
+    "Reasoning": 4,
+    "Decision": 5,
+    "None": 6
+  },
+  "id2label": {
+    "0": "Facts",
+    "1": "Issue",
+    "2": "Arguments of Petitioner",
+    "3": "Arguments of Respondent",
+    "4": "Reasoning",
+    "5": "Decision",
+    "6": "None"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "mode": "smoke",
+  "weight_mode": "smoke",
+  "device": "cpu",
+  "epochs": 2,
+  "batch_size": 16,
+  "learning_rate": 2e-05,
+  "max_seq_length": 128,
+  "train_samples": 3500,
+  "val_samples": 1400,
+  "best_macro_f1": 0.4767846778836133,
+  "final_eval": {
+    "macro_f1": 0.4767846778836133,
+    "weighted_f1": 0.4767846778836134,
+    "avg_loss": 1.2690172412178733,
+    "per_class": {
+      "Facts": {
+        "precision": 0.4280701754385965,
+        "recall": 0.61,
+        "f1-score": 0.5030927835051546,
+        "support": 200.0
+      },
+      "Issue": {
+        "precision": 0.764102564102564,
+        "recall": 0.745,
+        "f1-score": 0.7544303797468355,
+        "support": 200.0
+      },
+      "Arguments of Petitioner": {
+        "precision": 0.25555555555555554,
+        "recall": 0.115,
+        "f1-score": 0.15862068965517243,
+        "support": 200.0
+      },
+      "Arguments of Respondent": {
+        "precision": 0.4154929577464789,
+        "recall": 0.59,
+        "f1-score": 0.48760330578512395,
+        "support": 200.0
+      },
+      "Reasoning": {
+        "precision": 0.41208791208791207,
+        "recall": 0.375,
+        "f1-score": 0.39267015706806285,
+        "support": 200.0
+      },
+      "Decision": {
+        "precision": 0.6862745098039216,
+        "recall": 0.875,
+        "f1-score": 0.7692307692307693,
+        "support": 200.0
+      },
+      "None": {
+        "precision": 0.3853211009174312,
+        "recall": 0.21,
+        "f1-score": 0.27184466019417475,
+        "support": 200.0
+      },
+      "accuracy": 0.5028571428571429,
+      "macro avg": {
+        "precision": 0.47812925366463715,
+        "recall": 0.5028571428571429,
+        "f1-score": 0.4767846778836133,
+        "support": 1400.0
+      },
+      "weighted avg": {
+        "precision": 0.47812925366463704,
+        "recall": 0.5028571428571429,
+        "f1-score": 0.4767846778836134,
+        "support": 1400.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        122,
+        16,
+        4,
+        12,
+        17,
+        23,
+        6
+      ],
+      [
+        28,
+        149,
+        1,
+        5,
+        5,
+        11,
+        1
+      ],
+      [
+        18,
+        5,
+        23,
+        104,
+        23,
+        7,
+        20
+      ],
+      [
+        34,
+        2,
+        6,
+        118,
+        24,
+        7,
+        9
+      ],
+      [
+        40,
+        11,
+        6,
+        23,
+        75,
+        16,
+        29
+      ],
+      [
+        7,
+        3,
+        0,
+        5,
+        8,
+        175,
+        2
+      ],
+      [
+        36,
+        9,
+        50,
+        17,
+        30,
+        16,
+        42
+      ]
+    ]
+  },
+  "class_weights": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ]
+}

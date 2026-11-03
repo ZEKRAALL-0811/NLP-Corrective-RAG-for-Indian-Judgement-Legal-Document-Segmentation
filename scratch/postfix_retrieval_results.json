@@ -1,0 +1,352 @@
+[
+  {
+    "num": 1,
+    "sample": "sample2",
+    "question": "When did the petitioners sell their shares through the Offer For Sale, and how many shares and for what amount in each case?",
+    "gold_role": "Facts",
+    "pred_role": "Facts",
+    "role_correct": true,
+    "chunks_count": 4,
+    "hit1": true,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 1.0,
+    "ranks": [
+      1
+    ]
+  },
+  {
+    "num": 2,
+    "sample": "sample2",
+    "question": "What orders and actions were being challenged in these two writ petitions?",
+    "gold_role": "Facts",
+    "pred_role": "Arguments of Petitioner",
+    "role_correct": false,
+    "chunks_count": 5,
+    "hit1": true,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 1.0,
+    "ranks": [
+      1
+    ]
+  },
+  {
+    "num": 3,
+    "sample": "sample2",
+    "question": "What was the petitioners' argument about the second proviso to Section 139(8A) and the search carried out on 12.12.2024?",
+    "gold_role": "Arguments of Petitioner",
+    "pred_role": "Arguments of Petitioner",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": true,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 1.0,
+    "ranks": [
+      1
+    ]
+  },
+  {
+    "num": 4,
+    "sample": "sample2",
+    "question": "Why did the petitioners say no prudent person could have had reason to believe anything under Section 132(1)(b)?",
+    "gold_role": "Arguments of Petitioner",
+    "pred_role": "Arguments of Petitioner",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": true,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 1.0,
+    "ranks": [
+      1,
+      3
+    ]
+  },
+  {
+    "num": 5,
+    "sample": "sample2",
+    "question": "What did the Revenue argue about how far the court can review a search authorization?",
+    "gold_role": "Arguments of Respondent",
+    "pred_role": "Arguments of Respondent",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": true,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 1.0,
+    "ranks": [
+      1
+    ]
+  },
+  {
+    "num": 6,
+    "sample": "sample2",
+    "question": "How did the Revenue's counsel answer the petitioners' reliance on the Dr. Anita Sahay judgment?",
+    "gold_role": "Arguments of Respondent",
+    "pred_role": "Arguments of Respondent",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": false,
+    "hit3": false,
+    "hit5": false,
+    "mrr": 0.0,
+    "ranks": []
+  },
+  {
+    "num": 7,
+    "sample": "sample2",
+    "question": "What concession did the Additional Solicitor General make about clauses (a) and (c) of Section 132(1)?",
+    "gold_role": "Arguments of Respondent",
+    "pred_role": "Arguments of Respondent",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": false,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 0.5,
+    "ranks": [
+      2
+    ]
+  },
+  {
+    "num": 8,
+    "sample": "sample2",
+    "question": "Why did the court refuse to let the supplementary documents filed by the Revenue justify the search?",
+    "gold_role": "Reasoning",
+    "pred_role": "Reasoning",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": true,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 1.0,
+    "ranks": [
+      1,
+      4
+    ]
+  },
+  {
+    "num": 9,
+    "sample": "sample2",
+    "question": "On what reasoning did the court hold the Section 131(1A) notice could not stand?",
+    "gold_role": "Reasoning",
+    "pred_role": "Reasoning",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": false,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 0.3333333333333333,
+    "ranks": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "num": 10,
+    "sample": "sample2",
+    "question": "What second issue did the court take up in Sneh Lata Agrawal's petition after deciding the search challenge?",
+    "gold_role": "Issue",
+    "pred_role": "Issue",
+    "role_correct": true,
+    "chunks_count": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 1.0,
+    "ranks": [
+      1
+    ]
+  },
+  {
+    "num": 11,
+    "sample": "sample2",
+    "question": "What relief did the High Court finally grant, and what did it leave open to the Revenue?",
+    "gold_role": "Decision",
+    "pred_role": "Decision",
+    "role_correct": true,
+    "chunks_count": 2,
+    "hit1": true,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 1.0,
+    "ranks": [
+      1,
+      2
+    ]
+  },
+  {
+    "num": 12,
+    "sample": "sample3",
+    "question": "What did the consent compromise decree of 13.09.1993 provide, and what did the decree holder do when it was not complied with?",
+    "gold_role": "Facts",
+    "pred_role": "Facts",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": false,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 0.3333333333333333,
+    "ranks": [
+      3,
+      4
+    ]
+  },
+  {
+    "num": 13,
+    "sample": "sample3",
+    "question": "Why did the appellant file Application Nos. 6897, 6898, 8122 and 8126 of 2018?",
+    "gold_role": "Facts",
+    "pred_role": "Arguments of Petitioner",
+    "role_correct": false,
+    "chunks_count": 5,
+    "hit1": false,
+    "hit3": false,
+    "hit5": false,
+    "mrr": 0.0,
+    "ranks": []
+  },
+  {
+    "num": 14,
+    "sample": "sample3",
+    "question": "What was the first point the Bench framed for consideration?",
+    "gold_role": "Issue",
+    "pred_role": "Issue",
+    "role_correct": true,
+    "chunks_count": 3,
+    "hit1": true,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 1.0,
+    "ranks": [
+      1
+    ]
+  },
+  {
+    "num": 15,
+    "sample": "sample3",
+    "question": "On what grounds did the decree holder argue that the NCLT order of 22.06.2018 should not bind it?",
+    "gold_role": "Arguments of Petitioner",
+    "pred_role": "Arguments of Petitioner",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": false,
+    "hit3": false,
+    "hit5": false,
+    "mrr": 0.0,
+    "ranks": []
+  },
+  {
+    "num": 16,
+    "sample": "sample3",
+    "question": "How did the decree holder's counsel answer the argument that creating a mortgage is not an alienation barred by the prohibitory order?",
+    "gold_role": "Arguments of Petitioner",
+    "pred_role": "Arguments of Petitioner",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": false,
+    "hit3": false,
+    "hit5": false,
+    "mrr": 0.0,
+    "ranks": []
+  },
+  {
+    "num": 17,
+    "sample": "sample3",
+    "question": "Why did the Resolution Professionals of respondents 2 and 3 say the NCLT was the proper forum?",
+    "gold_role": "Arguments of Respondent",
+    "pred_role": "Arguments of Respondent",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": true,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 1.0,
+    "ranks": [
+      1,
+      3
+    ]
+  },
+  {
+    "num": 18,
+    "sample": "sample3",
+    "question": "What was respondent-5's argument about the Advocate General's consent and Article 215?",
+    "gold_role": "Arguments of Respondent",
+    "pred_role": "Arguments of Respondent",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": false,
+    "hit3": false,
+    "hit5": false,
+    "mrr": 0.0,
+    "ranks": []
+  },
+  {
+    "num": 19,
+    "sample": "sample3",
+    "question": "What did respondent-5's counsel argue about subrogation of the 2009 mortgage?",
+    "gold_role": "Arguments of Respondent",
+    "pred_role": "Arguments of Respondent",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": false,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 0.5,
+    "ranks": [
+      2,
+      5
+    ]
+  },
+  {
+    "num": 20,
+    "sample": "sample3",
+    "question": "Why did the Bench hold that the application could be treated as one for civil contempt?",
+    "gold_role": "Reasoning",
+    "pred_role": "Reasoning",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": true,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 1.0,
+    "ranks": [
+      1
+    ]
+  },
+  {
+    "num": 21,
+    "sample": "sample3",
+    "question": "Why did the Bench refuse to interfere with deferring the auction sale until the NCLT decides?",
+    "gold_role": "Reasoning",
+    "pred_role": "Reasoning",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": true,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 1.0,
+    "ranks": [
+      1
+    ]
+  },
+  {
+    "num": 22,
+    "sample": "sample3",
+    "question": "What was the final outcome of the original side appeals?",
+    "gold_role": "Decision",
+    "pred_role": "Decision",
+    "role_correct": true,
+    "chunks_count": 5,
+    "hit1": true,
+    "hit3": true,
+    "hit5": true,
+    "mrr": 1.0,
+    "ranks": [
+      1
+    ]
+  }
+]

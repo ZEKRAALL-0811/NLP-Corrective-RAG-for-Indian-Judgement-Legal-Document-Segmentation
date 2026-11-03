@@ -1,0 +1,110 @@
+{
+  "train": {
+    "split": "train",
+    "raw_count": 1122507,
+    "dropped_null_empty": 131,
+    "clean_count": 1122376,
+    "distribution": {
+      "Facts": {
+        "count": 169647,
+        "percentage": 15.11
+      },
+      "Issue": {
+        "count": 12769,
+        "percentage": 1.14
+      },
+      "Arguments of Petitioner": {
+        "count": 64985,
+        "percentage": 5.79
+      },
+      "Arguments of Respondent": {
+        "count": 50088,
+        "percentage": 4.46
+      },
+      "Reasoning": {
+        "count": 202328,
+        "percentage": 18.03
+      },
+      "Decision": {
+        "count": 19571,
+        "percentage": 1.74
+      },
+      "None": {
+        "count": 602988,
+        "percentage": 53.72
+      }
+    }
+  },
+  "val": {
+    "split": "val",
+    "raw_count": 293370,
+    "dropped_null_empty": 8,
+    "clean_count": 293362,
+    "distribution": {
+      "Facts": {
+        "count": 51922,
+        "percentage": 17.7
+      },
+      "Issue": {
+        "count": 4257,
+        "percentage": 1.45
+      },
+      "Arguments of Petitioner": {
+        "count": 24707,
+        "percentage": 8.42
+      },
+      "Arguments of Respondent": {
+        "count": 16020,
+        "percentage": 5.46
+      },
+      "Reasoning": {
+        "count": 67112,
+        "percentage": 22.88
+      },
+      "Decision": {
+        "count": 7634,
+        "percentage": 2.6
+      },
+      "None": {
+        "count": 121710,
+        "percentage": 41.49
+      }
+    }
+  },
+  "test": {
+    "split": "test",
+    "raw_count": 149881,
+    "dropped_null_empty": 13,
+    "clean_count": 149868,
+    "distribution": {
+      "Facts": {
+        "count": 24908,
+        "percentage": 16.62
+      },
+      "Issue": {
+        "count": 1836,
+        "percentage": 1.23
+      },
+      "Arguments of Petitioner": {
+        "count": 14520,
+        "percentage": 9.69
+      },
+      "Arguments of Respondent": {
+        "count": 9579,
+        "percentage": 6.39
+      },
+      "Reasoning": {
+        "count": 36688,
+        "percentage": 24.48
+      },
+      "Decision": {
+        "count": 3841,
+        "percentage": 2.56
+      },
+      "None": {
+        "count": 58496,
+        "percentage": 39.03
+      }
+    }
+  }
+}

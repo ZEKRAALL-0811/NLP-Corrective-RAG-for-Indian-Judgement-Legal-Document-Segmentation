@@ -1,0 +1,110 @@
+{
+  "case_1_multi_respondent": {
+    "counsels": {
+      "para_10_vijay_kumar": {
+        "matched_count": 1,
+        "sentence_indices": [
+          157
+        ],
+        "roles": [
+          "Arguments of Respondent"
+        ],
+        "overrides": [
+          "submission_block"
+        ],
+        "all_respondent_arg": true
+      },
+      "para_11_raghavachari": {
+        "matched_count": 1,
+        "sentence_indices": [
+          158
+        ],
+        "roles": [
+          "Arguments of Respondent"
+        ],
+        "overrides": [
+          "submission_block"
+        ],
+        "all_respondent_arg": true
+      },
+      "para_12_prakash": {
+        "matched_count": 1,
+        "sentence_indices": [
+          232
+        ],
+        "roles": [
+          "Arguments of Respondent"
+        ],
+        "overrides": [
+          "submission_block"
+        ],
+        "all_respondent_arg": true
+      }
+    },
+    "all_counsels_mapped_to_arguments_of_respondent": true
+  },
+  "case_2_quoted_submissions_in_reasoning": {
+    "sentence_270": {
+      "role": "Arguments of Respondent",
+      "override": "submission_cue",
+      "text": "20. The primary ground of attack on the side of the respondents/contemnors is th"
+    },
+    "sentence_271_appellant_plea": {
+      "role": "Arguments of Petitioner",
+      "override": "submission_cue",
+      "text": "However, the learned Senior Counsel for the appellant/decree holder submitted th"
+    },
+    "sentence_272_court_reasoning": {
+      "role": "Reasoning",
+      "override": null,
+      "text": "21. Be that as it may, in the light of the settled legal precedents, there can b"
+    },
+    "submission_accurately_captured": true,
+    "subsequent_court_reasoning_not_overwritten": true
+  },
+  "case_3_judicial_sounding_respondent_args": {
+    "matched_count": 4,
+    "indices": [
+      117,
+      124,
+      193,
+      197
+    ],
+    "roles": [
+      "None",
+      "Facts",
+      "Arguments of Respondent",
+      "Arguments of Respondent"
+    ],
+    "preserved_as_respondent_args": false
+  },
+  "case_4_submission_to_court_transition": {
+    "para_18_submissions": {
+      "idx": 261,
+      "role": "Arguments of Respondent"
+    },
+    "para_19_issues": {
+      "idx": 269,
+      "role": "Issue"
+    },
+    "para_21_reasoning": {
+      "idx": 272,
+      "role": "Reasoning"
+    },
+    "para_28_decision": {
+      "idx": 337,
+      "role": "Reasoning"
+    },
+    "clean_boundary": false
+  },
+  "case_5_cross_respondent_mention": {
+    "question": "What were K. Bharathi's principal arguments concerning the alleged wilful disobedience of court orders and the disputed mortgage transactions?",
+    "retrieved_chunk_id": "sample3_role_66",
+    "retrieved_role": "Arguments of Respondent",
+    "speaker": "Mr. V. Raghavachari",
+    "party_represented": "Respondent 5 (Mrs. K. Bharathi)",
+    "bharathi_counsel_retrieved": true,
+    "hostile_allegations_excluded": true,
+    "passes_routing_isolation": true
+  }
+}

@@ -1,0 +1,499 @@
+{
+  "total_questions": 70,
+  "dev_count": 35,
+  "test_count": 35,
+  "dev": [
+    {
+      "id": "facts_01",
+      "gold_role": "Facts",
+      "gold_kind": "role",
+      "question": "What transactions led to the dispute between the builder and the allottees?",
+      "split": "dev"
+    },
+    {
+      "id": "facts_02",
+      "gold_role": "Facts",
+      "gold_kind": "role",
+      "question": "How much consideration was paid under the initial agreement for sale in 1987?",
+      "split": "dev"
+    },
+    {
+      "id": "facts_03",
+      "gold_role": "Facts",
+      "gold_kind": "role",
+      "question": "When was the search operation initiated under Section 132 against the company?",
+      "split": "dev"
+    },
+    {
+      "id": "facts_04",
+      "gold_role": "Facts",
+      "gold_kind": "role",
+      "question": "What were the findings of the assessing officer during the scrutiny assessment?",
+      "split": "dev"
+    },
+    {
+      "id": "issue_01",
+      "gold_role": "Issue",
+      "gold_kind": "role",
+      "question": "What was the central question of law formulated by the division bench?",
+      "split": "dev"
+    },
+    {
+      "id": "issue_02",
+      "gold_role": "Issue",
+      "gold_kind": "role",
+      "question": "Did the High Court frame an issue regarding the retrospective effect of the statutory amendment?",
+      "split": "dev"
+    },
+    {
+      "id": "issue_03",
+      "gold_role": "Issue",
+      "gold_kind": "role",
+      "question": "What point for consideration was referred to the larger constitutional bench?",
+      "split": "dev"
+    },
+    {
+      "id": "issue_04",
+      "gold_role": "Issue",
+      "gold_kind": "role",
+      "question": "Is the writ petition maintainable against an interlocutory order passed under Section 148?",
+      "split": "dev"
+    },
+    {
+      "id": "pet_01",
+      "gold_role": "Arguments of Petitioner",
+      "gold_kind": "role",
+      "question": "What did learned Senior Counsel for the appellant contend regarding the validity of the mortgage?",
+      "split": "dev"
+    },
+    {
+      "id": "pet_02",
+      "gold_role": "Arguments of Petitioner",
+      "gold_kind": "role",
+      "question": "How did the petitioner challenge the satisfaction note recorded by the director general?",
+      "split": "dev"
+    },
+    {
+      "id": "pet_03",
+      "gold_role": "Arguments of Petitioner",
+      "gold_kind": "role",
+      "question": "What submissions were advanced by the appellant on the interpretation of Section 55(6)?",
+      "split": "dev"
+    },
+    {
+      "id": "pet_04",
+      "gold_role": "Arguments of Petitioner",
+      "gold_kind": "role",
+      "question": "Why did the petitioner argue that the reopening of assessment was time-barred?",
+      "split": "dev"
+    },
+    {
+      "id": "resp_01",
+      "gold_role": "Arguments of Respondent",
+      "gold_kind": "role",
+      "question": "What did the Additional Solicitor General submit in defense of the revenue's action?",
+      "split": "dev"
+    },
+    {
+      "id": "resp_02",
+      "gold_role": "Arguments of Respondent",
+      "gold_kind": "role",
+      "question": "How did the respondent justify the invocation of Section 131(1A) powers?",
+      "split": "dev"
+    },
+    {
+      "id": "resp_03",
+      "gold_role": "Arguments of Respondent",
+      "gold_kind": "role",
+      "question": "What was the respondent's argument regarding the exclusive jurisdiction of the NCLT?",
+      "split": "dev"
+    },
+    {
+      "id": "resp_04",
+      "gold_role": "Arguments of Respondent",
+      "gold_kind": "role",
+      "question": "Why did counsel for the opposite party contend that the writ petition was premature?",
+      "split": "dev"
+    },
+    {
+      "id": "reas_01",
+      "gold_role": "Reasoning",
+      "gold_kind": "role",
+      "question": "On what reasoning did the court conclude that the satisfaction note was defective?",
+      "split": "dev"
+    },
+    {
+      "id": "reas_02",
+      "gold_role": "Reasoning",
+      "gold_kind": "role",
+      "question": "Why did the bench hold that post-search material cannot validate an illegal authorization?",
+      "split": "dev"
+    },
+    {
+      "id": "reas_03",
+      "gold_role": "Reasoning",
+      "gold_kind": "role",
+      "question": "What legal rationale did the court apply to distinguish the judgment of the Supreme Court?",
+      "split": "dev"
+    },
+    {
+      "id": "reas_04",
+      "gold_role": "Reasoning",
+      "gold_kind": "role",
+      "question": "How did the High Court interpret the statutory phrase 'reason to believe' in Section 132?",
+      "split": "dev"
+    },
+    {
+      "id": "dec_01",
+      "gold_role": "Decision",
+      "gold_kind": "role",
+      "question": "What operative directions were issued by the High Court in the concluding paragraph?",
+      "split": "dev"
+    },
+    {
+      "id": "dec_02",
+      "gold_role": "Decision",
+      "gold_kind": "role",
+      "question": "Was the impugned warrant of authorization quashed by the bench?",
+      "split": "dev"
+    },
+    {
+      "id": "dec_03",
+      "gold_role": "Decision",
+      "gold_kind": "role",
+      "question": "What final order was passed regarding the pending execution petitions?",
+      "split": "dev"
+    },
+    {
+      "id": "dec_04",
+      "gold_role": "Decision",
+      "gold_kind": "role",
+      "question": "Did the court grant costs or order the parties to bear their own expenses?",
+      "split": "dev"
+    },
+    {
+      "id": "none_01",
+      "gold_role": "None",
+      "gold_kind": "role",
+      "question": "Which judges comprised the division bench that heard this matter?",
+      "split": "dev"
+    },
+    {
+      "id": "none_02",
+      "gold_role": "None",
+      "gold_kind": "role",
+      "question": "On which date was the judgment reserved and when was it pronounced?",
+      "split": "dev"
+    },
+    {
+      "id": "none_03",
+      "gold_role": "None",
+      "gold_kind": "role",
+      "question": "What was the neutral citation number assigned to this judgment?",
+      "split": "dev"
+    },
+    {
+      "id": "none_04",
+      "gold_role": "None",
+      "gold_kind": "role",
+      "question": "Who appeared as counsel for the income tax department?",
+      "split": "dev"
+    },
+    {
+      "id": "oos_01",
+      "gold_role": null,
+      "gold_kind": "out_of_scope",
+      "question": "Can you recommend a good Italian restaurant in Bangalore?",
+      "split": "dev"
+    },
+    {
+      "id": "oos_02",
+      "gold_role": null,
+      "gold_kind": "out_of_scope",
+      "question": "What is the current exchange rate between US Dollar and Indian Rupee?",
+      "split": "dev"
+    },
+    {
+      "id": "oos_03",
+      "gold_role": null,
+      "gold_kind": "out_of_scope",
+      "question": "Write a JavaScript script to fetch data from an external REST API.",
+      "split": "dev"
+    },
+    {
+      "id": "oos_04",
+      "gold_role": null,
+      "gold_kind": "out_of_scope",
+      "question": "Who won the best actor award at the National Film Awards last year?",
+      "split": "dev"
+    },
+    {
+      "id": "doc_01",
+      "gold_role": null,
+      "gold_kind": "whole_document",
+      "question": "Please provide a comprehensive summary of this entire judgment.",
+      "split": "dev"
+    },
+    {
+      "id": "doc_02",
+      "gold_role": null,
+      "gold_kind": "whole_document",
+      "question": "Can you give me an executive brief of the facts, arguments, and final ruling?",
+      "split": "dev"
+    },
+    {
+      "id": "doc_03",
+      "gold_role": null,
+      "gold_kind": "whole_document",
+      "question": "Explain the gist and overall outcome of this legal case in plain language.",
+      "split": "dev"
+    }
+  ],
+  "test": [
+    {
+      "id": "facts_05",
+      "gold_role": "Facts",
+      "gold_kind": "role",
+      "question": "What events transpired before the trial court prior to the filing of the first appeal?",
+      "split": "test"
+    },
+    {
+      "id": "facts_06",
+      "gold_role": "Facts",
+      "gold_kind": "role",
+      "question": "Did the tenant deposit the arrears of rent before the rent controller?",
+      "split": "test"
+    },
+    {
+      "id": "facts_07",
+      "gold_role": "Facts",
+      "gold_kind": "role",
+      "question": "What was the background of the compromise decree entered into by the partners?",
+      "split": "test"
+    },
+    {
+      "id": "facts_08",
+      "gold_role": "Facts",
+      "gold_kind": "role",
+      "question": "Which bank issued the letter of credit and on what date was it dishonoured?",
+      "split": "test"
+    },
+    {
+      "id": "issue_05",
+      "gold_role": "Issue",
+      "gold_kind": "role",
+      "question": "What was the primary issue regarding the jurisdiction of the National Company Law Tribunal?",
+      "split": "test"
+    },
+    {
+      "id": "issue_06",
+      "gold_role": "Issue",
+      "gold_kind": "role",
+      "question": "Does the bar under Section 139(8A) operate when search proceedings have already commenced?",
+      "split": "test"
+    },
+    {
+      "id": "issue_07",
+      "gold_role": "Issue",
+      "gold_kind": "role",
+      "question": "Did the court frame any question concerning the violation of natural justice principles?",
+      "split": "test"
+    },
+    {
+      "id": "issue_08",
+      "gold_role": "Issue",
+      "gold_kind": "role",
+      "question": "What legal point was taken up for adjudication regarding the validity of the warrant?",
+      "split": "test"
+    },
+    {
+      "id": "pet_05",
+      "gold_role": "Arguments of Petitioner",
+      "gold_kind": "role",
+      "question": "What was the petitioner's argument on the non-applicability of the insolvency moratorium?",
+      "split": "test"
+    },
+    {
+      "id": "pet_06",
+      "gold_role": "Arguments of Petitioner",
+      "gold_kind": "role",
+      "question": "Did the appellant contend that fraud vitiates all subsequent execution proceedings?",
+      "split": "test"
+    },
+    {
+      "id": "pet_07",
+      "gold_role": "Arguments of Petitioner",
+      "gold_kind": "role",
+      "question": "What plea did the petitioner urge regarding the absence of reason to believe?",
+      "split": "test"
+    },
+    {
+      "id": "pet_08",
+      "gold_role": "Arguments of Petitioner",
+      "gold_kind": "role",
+      "question": "How did the appellant's counsel explain the delay in approaching the appellate authority?",
+      "split": "test"
+    },
+    {
+      "id": "resp_05",
+      "gold_role": "Arguments of Respondent",
+      "gold_kind": "role",
+      "question": "What counter-submission was made by the respondent regarding subrogation of the earlier mortgage?",
+      "split": "test"
+    },
+    {
+      "id": "resp_06",
+      "gold_role": "Arguments of Respondent",
+      "gold_kind": "role",
+      "question": "How did the department defend the authorization order under Section 132(1)?",
+      "split": "test"
+    },
+    {
+      "id": "resp_07",
+      "gold_role": "Arguments of Respondent",
+      "gold_kind": "role",
+      "question": "What objections did the respondents raise concerning the maintainability of contempt proceedings?",
+      "split": "test"
+    },
+    {
+      "id": "resp_08",
+      "gold_role": "Arguments of Respondent",
+      "gold_kind": "role",
+      "question": "Did the respondent argue that the consent decree had already been superseded by subsequent orders?",
+      "split": "test"
+    },
+    {
+      "id": "reas_05",
+      "gold_role": "Reasoning",
+      "gold_kind": "role",
+      "question": "Why did the judges hold that inherent powers under Article 215 remain untrammeled?",
+      "split": "test"
+    },
+    {
+      "id": "reas_06",
+      "gold_role": "Reasoning",
+      "gold_kind": "role",
+      "question": "On what grounds did the court reject the department's reliance on the supplementary affidavit?",
+      "split": "test"
+    },
+    {
+      "id": "reas_07",
+      "gold_role": "Reasoning",
+      "gold_kind": "role",
+      "question": "Why did the bench find that creating a mortgage amounts to an alienation of property?",
+      "split": "test"
+    },
+    {
+      "id": "reas_08",
+      "gold_role": "Reasoning",
+      "gold_kind": "role",
+      "question": "How did the court balance the rights of the decree holder against the IBC moratorium?",
+      "split": "test"
+    },
+    {
+      "id": "dec_05",
+      "gold_role": "Decision",
+      "gold_kind": "role",
+      "question": "How were the original side appeals finally disposed of?",
+      "split": "test"
+    },
+    {
+      "id": "dec_06",
+      "gold_role": "Decision",
+      "gold_kind": "role",
+      "question": "What relief was given to the petitioners regarding the impounded title documents?",
+      "split": "test"
+    },
+    {
+      "id": "dec_07",
+      "gold_role": "Decision",
+      "gold_kind": "role",
+      "question": "Was the notice issued under Section 131(1A) set aside by the court?",
+      "split": "test"
+    },
+    {
+      "id": "dec_08",
+      "gold_role": "Decision",
+      "gold_kind": "role",
+      "question": "Did the appellate court confirm or reverse the order passed by the single judge?",
+      "split": "test"
+    },
+    {
+      "id": "none_05",
+      "gold_role": "None",
+      "gold_kind": "role",
+      "question": "In which high court was this writ petition decided?",
+      "split": "test"
+    },
+    {
+      "id": "none_06",
+      "gold_role": "None",
+      "gold_kind": "role",
+      "question": "What are the names and addresses of the contesting respondents?",
+      "split": "test"
+    },
+    {
+      "id": "none_07",
+      "gold_role": "None",
+      "gold_kind": "role",
+      "question": "What was the original side appeal number of the lead appeal?",
+      "split": "test"
+    },
+    {
+      "id": "none_08",
+      "gold_role": "None",
+      "gold_kind": "role",
+      "question": "Under which court roster was this matter listed for hearing?",
+      "split": "test"
+    },
+    {
+      "id": "oos_05",
+      "gold_role": null,
+      "gold_kind": "out_of_scope",
+      "question": "What are the best places to visit in Himachal Pradesh during winter?",
+      "split": "test"
+    },
+    {
+      "id": "oos_06",
+      "gold_role": null,
+      "gold_kind": "out_of_scope",
+      "question": "How do I bake sourdough bread with whole wheat flour?",
+      "split": "test"
+    },
+    {
+      "id": "oos_07",
+      "gold_role": null,
+      "gold_kind": "out_of_scope",
+      "question": "Can you tell me a humorous joke to brighten my morning?",
+      "split": "test"
+    },
+    {
+      "id": "oos_08",
+      "gold_role": null,
+      "gold_kind": "out_of_scope",
+      "question": "What are the health benefits of green tea compared to black coffee?",
+      "split": "test"
+    },
+    {
+      "id": "doc_04",
+      "gold_role": null,
+      "gold_kind": "whole_document",
+      "question": "What is this legal dispute about from start to finish?",
+      "split": "test"
+    },
+    {
+      "id": "doc_05",
+      "gold_role": null,
+      "gold_kind": "whole_document",
+      "question": "Summarize the key takeaways and major holdings of this decision.",
+      "split": "test"
+    },
+    {
+      "id": "doc_06",
+      "gold_role": null,
+      "gold_kind": "whole_document",
+      "question": "Give me a complete walkthrough of this court judgment.",
+      "split": "test"
+    }
+  ]
+}

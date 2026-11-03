@@ -1,0 +1,168 @@
+"""
+Script to create legalDataset/samples/gold_paragraphs.json from gold_questions.csv answer hints,
+and print the review table.
+"""
+
+import sys
+from pathlib import Path
+import json
+
+sys.path.insert(0, ".")
+
+CSV_PATH = Path("legalDataset/samples/gold_questions.csv")
+OUT_JSON = Path("legalDataset/samples/gold_paragraphs.json")
+
+# Map of question text to specific paragraph markers
+# Parsed from answer_hint column of gold_questions.csv
+PARAGRAPH_MAPPING = {
+    # Sample 2
+    "When did the petitioners sell their shares through the Offer For Sale, and how many shares and for what amount in each case?": {
+        "sample": "sample2",
+        "role": "Facts",
+        "markers": ["(9)"],
+        "answer_hint": "Para (9): sold on 01.07.2021 under O.F.S. in the I.P.O.; Pramod Swarup Agrawal 11,11,486 shares for Rs.33,00,00,000; Sneh Lata Agarwal 14,05,405 shares for Rs.41,59,99,880."
+    },
+    "What orders and actions were being challenged in these two writ petitions?": {
+        "sample": "sample2",
+        "role": "Facts",
+        "markers": ["(3)", "(4)"],
+        "answer_hint": "Paras (3)-(4): warrant of authorization dated 11.12.2024 (issued 12.12.2024) under Section 132 and the resulting search; in Writ Tax 31/2025 also the notice dated 27.01.2025 under Section 131(1A)."
+    },
+    "What was the petitioners' argument about the second proviso to Section 139(8A) and the search carried out on 12.12.2024?": {
+        "sample": "sample2",
+        "role": "Arguments of Petitioner",
+        "markers": ["(13)"],
+        "answer_hint": "Para (13): Sri Mistri argued that although the retrospective amendment made the petitioners liable to tax, the search on 12.12.2024 triggered the second proviso to Section 139(8A) which barred them from filing an updated return."
+    },
+    "Why did the petitioners say no prudent person could have had reason to believe anything under Section 132(1)(b)?": {
+        "sample": "sample2",
+        "role": "Arguments of Petitioner",
+        "markers": ["(14)", "(15)"],
+        "answer_hint": "Paras (14)-(15): there was no information referable to Section 132(1)(b); non-payment of capital gains tax arose from an admitted lacuna in law later rectified, so it could not justify a search."
+    },
+    "What did the Revenue argue about how far the court can review a search authorization?": {
+        "sample": "sample2",
+        "role": "Arguments of Respondent",
+        "markers": ["(17)", "(32)"],
+        "answer_hint": "Paras (17) and (32): scope of judicial review is limited; relied on Laljibhai Kanjibhai Mandalia (2022) 446 ITR 18 (SC); information and reason to believe existed; asked the court to read the satisfaction note under 'Other Allegations'."
+    },
+    "How did the Revenue's counsel answer the petitioners' reliance on the Dr. Anita Sahay judgment?": {
+        "sample": "sample2",
+        "role": "Arguments of Respondent",
+        "markers": ["(17)"],
+        "answer_hint": "Para (17): said reliance on Dr. Anita Sahay (2004) ITR Vol.266 597 was misplaced because it was clarified by Dr. V.S. Chauhan (2011) 200 Taxman 413 (Allahabad); also cited the Jharkhand High Court view."
+    },
+    "What concession did the Additional Solicitor General make about clauses (a) and (c) of Section 132(1)?": {
+        "sample": "sample2",
+        "role": "Arguments of Respondent",
+        "markers": ["(33)"],
+        "answer_hint": "Para (33): ASG very fairly submitted that clauses (a) and (c) are not attracted and the case is referable only to clause (b)."
+    },
+    "Why did the court refuse to let the supplementary documents filed by the Revenue justify the search?": {
+        "sample": "sample2",
+        "role": "Reasoning",
+        "markers": ["(44)", "(45)", "(46)"],
+        "answer_hint": "Paras (44)-(46): the documents contained post-search information; information and reason to believe must pre-exist the search; cited H.J. Industries and Bal Krushna Gopalrao Buty; most recitals did not appear in the satisfaction note."
+    },
+    "On what reasoning did the court hold the Section 131(1A) notice could not stand?": {
+        "sample": "sample2",
+        "role": "Reasoning",
+        "markers": ["(51)", "(52)", "(53)", "(54)"],
+        "answer_hint": "Paras (51)-(54): Adarsh Kumar, the authorised officer under Section 132, issued the notice after action under clauses (i)-(v) had already been taken, which Section 131(1A) does not allow; the argument that he was also Deputy Director was not accepted; Emaar Alloys (Jharkhand) noted."
+    },
+    "What second issue did the court take up in Sneh Lata Agrawal's petition after deciding the search challenge?": {
+        "sample": "sample2",
+        "role": "Issue",
+        "markers": ["(49)"],
+        "answer_hint": "Para (49): the validity of the notice dated 27.01.2025 issued under Section 131(1A) of the Act, 1961."
+    },
+    "What relief did the High Court finally grant, and what did it leave open to the Revenue?": {
+        "sample": "sample2",
+        "role": "Decision",
+        "markers": ["(48)", "(54)", "(55)", "(56)", "(57)"],
+        "answer_hint": "Paras (48), (54)-(57): warrant of authorization quashed and search declared illegal; notice dated 27.01.2025 quashed; both petitions allowed; Revenue may still proceed under other provisions such as Section 148; sealed satisfaction note and documents returned to Revenue counsel."
+    },
+
+    # Sample 3
+    "What did the consent compromise decree of 13.09.1993 provide, and what did the decree holder do when it was not complied with?": {
+        "sample": "sample3",
+        "role": "Facts",
+        "markers": ["3.1", "3.2"],
+        "answer_hint": "Paras 3.1-3.2: construction time extended at enhanced rates, failing which sums paid were refundable with interest, and on further failure it was executable as a money decree; execution petition E.P.No.194 of 2004 was filed; attachment and prohibitory orders followed (prohibitory order 21.04.2005)."
+    },
+    "Why did the appellant file Application Nos. 6897, 6898, 8122 and 8126 of 2018?": {
+        "sample": "sample3",
+        "role": "Facts",
+        "markers": ["3.8"],
+        "answer_hint": "Para 3.8: under Article 215 to bring interference with the administration of justice to the court's notice; 6897 to punish the respondents; 8122 and 8126 to declare the NCLT order of 22.06.2018 non-est; 6898 to extend time for the auction scheduled for 25.07.2018."
+    },
+    "What was the first point the Bench framed for consideration?": {
+        "sample": "sample3",
+        "role": "Issue",
+        "markers": ["19"],
+        "answer_hint": "Para 19: whether the application under Article 215 of the Constitution read with Section 2(b) of the Contempt of Courts Act is maintainable for holding the respondents guilty of contempt."
+    },
+    "On what grounds did the decree holder argue that the NCLT order of 22.06.2018 should not bind it?": {
+        "sample": "sample3",
+        "role": "Arguments of Petitioner",
+        "markers": ["6", "7(g)", "7"],
+        "answer_hint": "Paras 6 (grounds B, C, D, E) and 7(g): the order was obtained by suppression of material facts and fabricated documents, is a nullity, and the NCLT lacks jurisdiction over fraud on this Court; even the 2nd and 3rd respondent companies said the NCLT proceedings were fraudulent."
+    },
+    "How did the decree holder's counsel answer the argument that creating a mortgage is not an alienation barred by the prohibitory order?": {
+        "sample": "sample3",
+        "role": "Arguments of Petitioner",
+        "markers": ["7(b)", "7"],
+        "answer_hint": "Para 7(b): a mortgage is a transfer of an interest in specific immovable property (Section 58(a) TP Act); ownership is a bundle of rights, so transferring subsidiary rights is an alienation; cited M.C. Thomas v. Sree Emoor Bhagavathy Devaswom."
+    },
+    "Why did the Resolution Professionals of respondents 2 and 3 say the NCLT was the proper forum?": {
+        "sample": "sample3",
+        "role": "Arguments of Respondent",
+        "markers": ["10", "17"],
+        "answer_hint": "Paras 10 and 17: NCLT is authorised to decide fraud and collusion; the IBC machinery cannot be bypassed; NCLT is best placed to protect all stakeholders (about Rs.200 crore due to Kotak Mahindra Bank); moratorium in force."
+    },
+    "What was respondent-5's argument about the Advocate General's consent and Article 215?": {
+        "sample": "sample3",
+        "role": "Arguments of Respondent",
+        "markers": ["11.1"],
+        "answer_hint": "Para 11.1: the prayer was in the nature of criminal contempt, so Section 15 of the Contempt of Courts Act required the Advocate General's consent (Bal Thackeray v. Harish Pimpalkhute); Article 215 only preserves the power and must be read with the Act."
+    },
+    "What did respondent-5's counsel argue about subrogation of the 2009 mortgage?": {
+        "sample": "sample3",
+        "role": "Arguments of Respondent",
+        "markers": ["11.6", "11.9"],
+        "answer_hint": "Paras 11.6 and 11.9: the 19.06.2009 mortgage deed was not a new encumbrance but a subrogation of a mortgage created by Indian Bank in 1989, passed to IL&FS and India Bulls; Section 92 of the Transfer of Property Act relied on."
+    },
+    "Why did the Bench hold that the application could be treated as one for civil contempt?": {
+        "sample": "sample3",
+        "role": "Reasoning",
+        "markers": ["21"],
+        "answer_hint": "Para 21: High Court has inherent power under Article 215 as a court of record which the Contempt of Courts Act cannot curtail; the affected party instituted it and the parties were put on notice, so it can be treated as civil contempt after following natural justice."
+    },
+    "Why did the Bench refuse to interfere with deferring the auction sale until the NCLT decides?": {
+        "sample": "sample3",
+        "role": "Reasoning",
+        "markers": ["25"],
+        "answer_hint": "Para 25: a moratorium under Section 14 IBC applies; civil proceedings against the company in resolution cannot proceed until it ends; parties can test the NCLT proceedings before that authority; so the single Judge's direction cannot be faulted."
+    },
+    "What was the final outcome of the original side appeals?": {
+        "sample": "sample3",
+        "role": "Decision",
+        "markers": ["28", "26"],
+        "answer_hint": "Para 28 (and 26): all original side appeals dismissed; connected CMPs closed with liberty to re-apply after the NCLT decides the IBC proceedings; no order as to costs; the original title documents stay in custodia legis subject to orders in E.P.No.194 of 2004."
+    },
+}
+
+with open(OUT_JSON, "w", encoding="utf-8") as f:
+    json.dump(PARAGRAPH_MAPPING, f, indent=2)
+
+print(f"Created {OUT_JSON} with {len(PARAGRAPH_MAPPING)} questions.")
+
+# Print review table
+print("\n" + "=" * 120)
+print(f"{'#':<3} | {'Sample':<8} | {'Role':<24} | {'Gold Paragraph Markers':<25} | {'Question':<50}")
+print("=" * 120)
+for i, (q, info) in enumerate(PARAGRAPH_MAPPING.items(), 1):
+    markers_str = ", ".join(info["markers"])
+    q_trunc = q if len(q) <= 48 else q[:45] + "..."
+    print(f"{i:<3} | {info['sample']:<8} | {info['role']:<24} | {markers_str:<25} | {q_trunc:<50}")
+print("=" * 120)

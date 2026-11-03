@@ -1,0 +1,55 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.env
+
+# Python Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python Bytecode & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.deepeval/
+.mypy_cache/
+.ruff_cache/
+
+# Databases & Vector Stores
+artifacts/chroma/
+artifacts/chroma_db/
+artifacts/chroma_test/
+artifacts/chroma_test_pos/
+*.sqlite3
+
+# Model Checkpoints & Large Weights
+artifacts/model_checkpoint/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# Large Raw Datasets & Binary Probability Arrays
+legalDataset/*.csv
+legalDataset/samples/*.pdf
+artifacts/eval_reports/*.npz
+scratch/test_eval_reports/
+
+# Runtime Logs, Caches & Transients
+artifacts/cache/
+artifacts/logs/
+*.log
+*.tmp
+
+# Local Data & IDE State
+data/
+.agents/
+.claude/
+.vscode/
+.idea/
+

@@ -1,0 +1,157 @@
+{
+  "dry_run": false,
+  "epochs": 2,
+  "batch_size": 32,
+  "max_seq_length": 128,
+  "learning_rate": 2e-05,
+  "best_macro_f1": 0.5571841516705766,
+  "final_eval": {
+    "macro_f1": 0.5571841516705766,
+    "weighted_f1": 0.5993878847784088,
+    "avg_loss": 1.0920130462819682,
+    "report_str": "                         precision    recall  f1-score   support\n\n                  Facts     0.5973    0.6983    0.6439     51922\n                  Issue     0.4771    0.6307    0.5432      4257\nArguments of Petitioner     0.4762    0.3968    0.4329     24707\nArguments of Respondent     0.4456    0.4248    0.4349     16020\n              Reasoning     0.5486    0.4706    0.5066     67112\n               Decision     0.5754    0.7550    0.6531      7634\n                   None     0.6804    0.6909    0.6856    121710\n\n               accuracy                         0.6033    293362\n              macro avg     0.5429    0.5810    0.5572    293362\n           weighted avg     0.5998    0.6033    0.5994    293362\n",
+    "report_dict": {
+      "Facts": {
+        "precision": 0.5973212961895191,
+        "recall": 0.6983167058279728,
+        "f1-score": 0.6438826882608348,
+        "support": 51922.0
+      },
+      "Issue": {
+        "precision": 0.47707889125799574,
+        "recall": 0.6307258632840028,
+        "f1-score": 0.543247344461305,
+        "support": 4257.0
+      },
+      "Arguments of Petitioner": {
+        "precision": 0.4762205489434054,
+        "recall": 0.39677014611243777,
+        "f1-score": 0.4328799788042038,
+        "support": 24707.0
+      },
+      "Arguments of Respondent": {
+        "precision": 0.44561587322375745,
+        "recall": 0.4247815230961298,
+        "f1-score": 0.4349493464574478,
+        "support": 16020.0
+      },
+      "Reasoning": {
+        "precision": 0.5485680543253617,
+        "recall": 0.4706460841578257,
+        "f1-score": 0.5066283853686313,
+        "support": 67112.0
+      },
+      "Decision": {
+        "precision": 0.5754217829689527,
+        "recall": 0.7550432276657061,
+        "f1-score": 0.6531074726644382,
+        "support": 7634.0
+      },
+      "None": {
+        "precision": 0.6804039455903416,
+        "recall": 0.6908635280584997,
+        "f1-score": 0.6855938456771753,
+        "support": 121710.0
+      },
+      "accuracy": 0.6033024045377383,
+      "macro avg": {
+        "precision": 0.5429471989284762,
+        "recall": 0.5810210111717964,
+        "f1-score": 0.5571841516705766,
+        "support": 293362.0
+      },
+      "weighted avg": {
+        "precision": 0.5998391814328234,
+        "recall": 0.6033024045377383,
+        "f1-score": 0.5993878847784088,
+        "support": 293362.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        36258,
+        887,
+        1434,
+        955,
+        4147,
+        1139,
+        7102
+      ],
+      [
+        1014,
+        2685,
+        73,
+        7,
+        120,
+        62,
+        296
+      ],
+      [
+        1926,
+        78,
+        9803,
+        3551,
+        2529,
+        112,
+        6708
+      ],
+      [
+        1527,
+        33,
+        3061,
+        6805,
+        2025,
+        83,
+        2486
+      ],
+      [
+        7094,
+        489,
+        2436,
+        1825,
+        31586,
+        1210,
+        22472
+      ],
+      [
+        338,
+        278,
+        126,
+        62,
+        634,
+        5764,
+        432
+      ],
+      [
+        12544,
+        1178,
+        3652,
+        2066,
+        16538,
+        1647,
+        84085
+      ]
+    ]
+  },
+  "smoke_test_comparison": {
+    "smoke_test_run3_macro_f1": 0.4768,
+    "current_run_macro_f1": 0.5571841516705766,
+    "macro_f1_gain": 0.08038415167057655
+  },
+  "batching_mode": "grouped10",
+  "pure_step_train_speed_sent_sec": 654.4344353197383,
+  "pure_steps_per_sec": 20.45151341336577,
+  "measured_val_speed_sent_sec": 1894.199388250815,
+  "measured_pretok_speed_sent_sec": 6985.037618315939,
+  "measured_avg_ckpt_save_sec": 11.197808931271235,
+  "projected_full_run_hours": 1.1680757096526886,
+  "class_weights": [
+    1.8853033781051636,
+    6.0,
+    3.0461254119873047,
+    3.4696645736694336,
+    1.7263400554656982,
+    5.550701141357422,
+    1.0
+  ]
+}
