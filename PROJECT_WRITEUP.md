@@ -414,3 +414,4 @@ Regex Number & Date Verification ──► DeepEval Faithfulness Check ──►
    *(Defined the reference-free RAG Triad metrics: Faithfulness, Answer Relevance, and Context Relevance).*
 8. **Xiao, S., Liu, Z., Zhang, P., & Muennighoff, N. (2023).** *C-Pack: Packaged Resources to Advance General Chinese and English Embedding.* arXiv preprint arXiv:2309.07597.  
    *(Introduced the BGE embedding suite, including `bge-small-en-v1.5` utilized for dense retrieval in JurisGraph).*
+
